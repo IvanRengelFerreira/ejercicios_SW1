@@ -1,6 +1,6 @@
 const config =  require('./config.json');
 const http = require('http');
-const os = require('os')
+const os = require('os');
 const port = 3002;
 
 const server = http.createServer((req, res) => {
@@ -11,10 +11,11 @@ const server = http.createServer((req, res) => {
 });
 
 
+let version = process.version;
+server.listen(port, () => {
+
 let system = os.platform();
 let arch  = process.arch;
-let version = process.version
-server.listen(port, () => {
 
 console.log(`Server running at port ${port}`);
 
@@ -26,19 +27,19 @@ setInterval(()=> {
 let cpu = process.cpuUsage();
 let memory = (os.totalmem() - os.freemem())/(1024*1024*1024);
 let systemTime = os.uptime();
-let nodeTime = process.uptime()
+let nodeTime = process.uptime();
 console.log(`Mostrando info de intervalos,modificar config.json para elegir que mostrar y que no \n`);
   if(config.show.memory){
-    console.log(`memory used ${memory} GB`);
+    console.log(`memory used ${memory.toFixed(2)} GB`);
   }
   if(config.show.cpu){
     console.log(`CPU:${JSON.stringify(cpu)}`);
   }
   if(config.show.systemUptime){
-    console.log(`tiempo del sistema vivo:${systemTime}`);
+    console.log(`tiempo del sistema vivo:${systemTime.toFixed(2)}`);
   }
   if(config.show.nodeUptime){
-    console.log(`tiempo de node vivo ${nodeTime}`);
+    console.log(`tiempo de node vivo ${nodeTime.toFixed(2)}`);
   }
   console.log(`\n`)
   }
