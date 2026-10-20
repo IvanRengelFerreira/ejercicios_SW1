@@ -1,0 +1,9 @@
+{
+  "intervalSeconds": 5,
+  "show": {
+    "cpu": true,
+    "memory": true,
+    "systemUptime": true,
+    "nodeUptime": false
+  }
+}
