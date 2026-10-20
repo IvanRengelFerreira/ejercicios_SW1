@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #222222;
+  background-color: #f2f2f2;
+}
+
+h2 {
+  color: #2b5dd6;
+  border-bottom: 2px solid #dddddd;
+  padding-bottom: 5px;
+}
+
+blockquote {
+  border-left: 4px solid #2b5dd6;
+  padding-left: 15px;
+  font-style: italic;
+  color: #555555;
+}
+
+.cabecera {
+  background-color: #2b5dd6;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+}
+
+.cabecera img {
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.contenedor {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.lateral {
+  width: 200px;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lateral a {
+  display: block;
+  padding: 8px;
+  color: #222222;
+  text-decoration: none;
+}
+
+.lateral a:hover {
+  background-color: #dde6fb;
+  color: #2b5dd6;
+}
+
+.contenido {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+#aficiones li {
+  display: inline-block;
+  background-color: #dde6fb;
+  padding: 4px 10px;
+  margin-right: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #2b5dd6;
+  color: #ffffff;
+}
+
+input, select, textarea {
+  width: 100%;
+  max-width: 350px;
+  padding: 6px;
+  border: 1px solid #cccccc;
+}
+
+button {
+  padding: 8px 18px;
+  background-color: #2b5dd6;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b3a86;
+}
+
+a[href^="mailto:"] {
+  color: #2b5dd6;
+}
+
+.pie {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    display: block;
+  }
+
+  .lateral {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

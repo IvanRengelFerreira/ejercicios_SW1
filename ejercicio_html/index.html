@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ejercicio 1 de SW1">
+  <meta name="author" content="Ivan">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Ivan Rengel</title>
+</head>
+
+<body>
+
+  <header class="cabecera">
+    <img src="favicon.svg" alt="Avatar con las iniciales IR" width="80" height="80">
+    <h1>Ivan Rengel</h1>
+    <p>Estudiante de 4º de Ingeniería de Sistemas de Información</p>
+  </header>
+
+  <div class="contenedor">
+
+    <nav class="lateral">
+      <h2>Secciones</h2>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#estudios">Estudios</a></li>
+        <li><a href="#asignaturas">Asignaturas</a></li>
+        <li><a href="#aficiones">Aficiones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main class="contenido">
+
+      <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+          Hola, me llamo <strong>Ivan</strong>
+          <abbr title="Grado en Ingeniería de Sistemas de Información">GISI</abbr>. Esta seria una seccion que se
+          usaria para describirme a mi mismo y mis intereses, por ejemplo, me gusta el
+          <em>desarrollo web</em>
+        </p>
+
+        <h3>Datos personales</h3>
+        <dl>
+          <dt>Nombre</dt>
+          <dd>Ivan Rengel</dd>
+          <dt>Ciudad</dt>
+          <dd>Madrid, España</dd>
+          <dt>Idiomas</dt>
+          <dd>Español (nativo), Inglés (B2)</dd>
+        </dl>
+
+        <blockquote>
+          <p>La informática no trata sobre los ordenadores, igual que la astronomía no trata sobre telescopios.</p>
+          <footer>— Edsger W. Dijkstra</footer>
+        </blockquote>
+      </section>
+
+      <section id="estudios">
+        <h2>Trayectoria académica</h2>
+        <ol>
+          <li>Educación Secundaria Obligatoria — <time datetime="2016">2016</time></li>
+          <li>Grado en Sistemas de informacion — desde <time datetime="2023-09">septiembre de 2023</time></li>
+        </ol>
+
+        <details>
+          <summary>Ver proyectos destacados</summary>
+          <article>
+            <h3>Plataforma de estudio</h3>
+            <p>Aplicación con <abbr title="HyperText Markup Language">HTML</abbr>, React,Typescript y <abbr title="Cascading Style Sheets">CSS</abbr> para ayudar a los estudiantes
+              para estudiar ingles.</p>
+          </article>
+          <article>
+            <h3>Analisis de mercados </h3>
+            <p>Estudio de mercado con análisis de datos y generación de informes.</p>
+          </article>
+        </details>
+      </section>
+
+      <section id="asignaturas">
+        <h2>Asignaturas de este curso</h2>
+        <table>
+          <caption>Asignaturas de 4º curso y créditos ECTS</caption>
+          <thead>
+            <tr>
+              <th scope="col">Asignatura</th>
+              <th scope="col">Cuatrimestre</th>
+              <th scope="col">Créditos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sistemas Web I</td>
+              <td>Primero</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>Doctrina Social</td>
+              <td>Primero</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>Seguridad de la información</td>
+              <td>Primero</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>Trabajo Fin de Grado</td>
+              <td>Segundo</td>
+              <td>12</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="aficiones">
+        <h2>Aficiones</h2>
+        <ul>
+          <li>Futbol</li>
+          <li>Videojuegos</li>
+        </ul>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes escribirme a <a href="mailto:ivan@example.com">ivan@example.com</a>
+          o rellenar este formulario:</p>
+
+        <form action="#" method="post">
+          <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </p>
+          <p>
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+          </p>
+          <p>
+            <label for="motivo">Motivo:</label><br>
+            <select id="motivo" name="motivo">
+              <option value="duda">Una duda</option>
+              <option value="proyecto">Propuesta de proyecto</option>
+              <option value="otro">Otro</option>
+            </select>
+          </p>
+          <p>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe aquí tu mensaje..."></textarea>
+          </p>
+          <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+          </p>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="pie">
+    <p>&copy; 2026 Iván Rengel — Ejercicio1 de la asignatura Sistemas Web I.</p>
+    <p><small>Última actualización: <time datetime="2026-09-21">21 de septiembre de 2026</time></small></p>
+  </footer>
+
+</body>
+
+</html>

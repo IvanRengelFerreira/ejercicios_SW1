@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de contraseñas</title>
+</head>
+<body>
+  <h1>Generador de contraseñas</h1>
+
+  <p>
+    Número de palabras:
+    <input type="number" id="numPalabras" value="4" min="1" max="10">
+  </p>
+  <p>
+    <input type="checkbox" id="mayusculas"> Comenzar cada palabra en mayúsculas
+  </p>
+  <p>
+    <input type="checkbox" id="noRepetir"> No repetir palabras
+  </p>
+
+  <button onclick="generar()">Generar</button>
+
+  <h2 id="resultado"></h2>
+
+  <script src="diccionario.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
