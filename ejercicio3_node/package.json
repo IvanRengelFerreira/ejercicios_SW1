@@ -1,0 +1,12 @@
+{
+  "name": "ejercicio3_node",
+  "version": "1.0.0",
+  "description": "Servidor que genera contraseñas aleatorias a partir de palabras de un diccionario",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
